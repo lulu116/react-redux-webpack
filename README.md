@@ -17,4 +17,5 @@ yarn安装，npm install -g yarn
 * yarn add webpack
 
 ### 初学者零基础搭建时踩的坑
-* 
+* 此项目采用webpack 4，建议全局安装webpack、webpack-cli
+* react-dom在页面中都没用到，为何还引用呢？由于我们export default导出的组件在渲染时是需要react-dom，相当于执行document.createElement
