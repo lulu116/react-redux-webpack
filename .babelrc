@@ -1,0 +1,8 @@
+{
+  "presets": [  //从下至上执行
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "plugins": []
+}
