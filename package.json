@@ -29,10 +29,19 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
+    "antd": "^3.22.2",
+    "enquire-js": "^0.2.1",
+    "rc-animate": "^2.10.0",
+    "rc-queue-anim": "^1.8.1",
+    "rc-scroll-anim": "^2.6.0",
+    "rc-tween-one": "^2.6.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
+    "react-sublime-video": "^0.2.5",
+    "react-transition-group": "^4.2.2",
     "redux": "^4.0.1"
   }
 }

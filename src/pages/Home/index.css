@@ -1,0 +1,106 @@
+body {
+    color: #fff;
+    font-size: 18px;
+}
+
+.pack-page {
+    width: 100%;
+    height: 800px;
+    background-color: #0098CE;
+}
+
+.page0 {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-title {
+    position: relative;
+    top: 20%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.home-title .page-title {
+    font-size: 36px;
+    line-height: 28px;
+}
+
+.home-title .page-description {
+    padding-top: 60px;
+    font-size: 22px;
+    line-height: 44px;
+
+}
+
+
+.page1 {
+    background-color: #19436E;
+    height: 1000px;
+}
+
+.page1 .tween-one {
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 160px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page1 .demo-content {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #133252;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.page2 .page2-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+.page2 .demo-content2 {
+    margin: 0 auto;
+    width: 600px;
+    height: 80px;
+    background-color: #133252;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.page3 .page2-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+.page3 .demo-content {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #133252;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.demo-content {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #133252;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 12px;
+}

@@ -9,11 +9,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  */
 module.exports = {
     devtool: 'source-map',
-    entry: path.join(__dirname,'./src/index.js'),
+    entry: path.join(__dirname, './src/index.js'),
     output: {
         filename: "[name].[hash].js",
         chunkFilename: '[name].[chunkhash].js',  //hash chunkhash避免了缓存问题，如果文件没有变化，则不用再生成，有变化时改变hash
-        path: path.join(__dirname,'./dist')
+        path: path.join(__dirname, './dist')
     },
     module: {
         rules: [
@@ -26,8 +26,8 @@ module.exports = {
                         cacheDirectory: true  //记录缓存
                     }
                 }],
-                include: path.join(__dirname,'./src'),
-                exclude: path.join(__dirname,'node_modules') //排除node_modules
+                include: path.join(__dirname, './src'),
+                exclude: path.join(__dirname, 'node_modules') //排除node_modules
             },
             {
                 test: /\.css$/,
@@ -50,7 +50,7 @@ module.exports = {
             component: path.join(__dirname, './src/component'),
             pages: path.join(__dirname, './src/pages'),
             router: path.join(__dirname, './src/router'),
-            styles: path.join(__dirname,'./src/styles')
+            styles: path.join(__dirname, './src/styles')
         }
     },
     /*注意，该plugin直接做文本替换，指定的值必须包括引号。
@@ -60,27 +60,27 @@ module.exports = {
             'process.env.VERSION': JSON.stringify('1.0.0')
         }),
         new HtmlWebpackPlugin({
-           title: 'hello webpack!',
-           template: path.join(__dirname, './src/index.html'),
-           filename: 'index.html'
+            title: 'hello webpack!',
+            template: path.join(__dirname, './src/index.html'),
+            filename: 'index.html'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
         hot: true,
-        contentBase: [path.join(__dirname, './src'),path.join(__dirname, "dist")],
+        contentBase: [path.join(__dirname, './src'), path.join(__dirname, "dist")],
         compress: true, //一切服务都启用gzip 压缩 （服务端与浏览器端通信）
-        port: 8888,
+        port: 7777,
         proxy: {
             "/api": {
                 target: "http://localhost:8888",
-                pathRewrite: {"^/api" : ""}
+                pathRewrite: {"^/api": ""}
             }
         },
         historyApiFallback: true,
-        //host: '0.0.0.0',  //外部服务器可访问此项目
+        host: '0.0.0.0',  //外部服务器可访问此项目
         open: true,
         overlay: true //显示报错信息在浏览器端
     }
 }
-console.log('RUNNING APP VERSION'+process.env.VERSION)
+console.log('RUNNING APP VERSION' + process.env.VERSION)

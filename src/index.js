@@ -5,10 +5,11 @@ import {Provider} from 'react-redux';
 import getRouter from 'router/router';
 import store from './redux/store'
 
+require('animate.css')
 /*if(module.hot) {
     module.hot.accept();
 }*/
 /*
 * 包裹store
 * */
-ReactDom.render(<Provider store={store}>{getRouter()}</Provider>,document.getElementById('app'))
+ReactDom.render(<Provider store={store}>{getRouter()}</Provider>, document.getElementById('app'))
